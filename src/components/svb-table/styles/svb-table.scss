@@ -1,0 +1,40 @@
+@import './vars.scss';
+
+#table-wrapper {
+  overflow: auto;
+  position: relative;
+}
+
+.svb-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.svb-table thead tr {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $table-color;
+  color: white;
+  text-transform: uppercase;
+}
+
+.svb-table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+.svb-table tbody tr.active {
+  background-color: #c0c0c0;
+}
+
+.svb-table th, .svb-table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  border: 2px solid #DEE4E8
+}
+
+.svb-table th {
+  width: 150px; 
+}
+
